@@ -23,8 +23,12 @@ if [[ "$1" == "--command" ]]; then
         # Save the old tmpdir:
         original_tmpdir=$TMPDIR
 
+        # make bids directory:
+        mkdir ./BIDS
+
         # Make a new tmpdir to avoid cache issues:
-        new_tmpdir="/path/to/new/tmpdir"
+        mkdir ./tmpdir
+        new_tmpdir="./tmpdir"
         export TMPDIR=$new_tmpdir
         echo "New TMPDIR set to: $TMPDIR"
 
