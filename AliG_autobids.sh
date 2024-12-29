@@ -42,8 +42,7 @@ if [[ "$1" == "--command" ]]; then
         exit 1
     fi
 else
-    echo "Usage: ./example.sh --command <my command>"
-    echo "Example: ./AliG_autobids.sh --command \"singularity run /srv/containers/tar2bids_v0.2.5.sif -h heuristic_file.py -o ./BIDS ./bluh_bluh_usually_long_file_name.tar\""
+    echo "Usage: ./AliG_autobids.sh --command \"singularity run /srv/containers/tar2bids_v0.2.5.sif -h heuristic_file.py -o ./BIDS ./bluh_bluh_usually_long_file_name.tar\""
     exit 1
 fi
 
